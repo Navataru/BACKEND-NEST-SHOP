@@ -13,6 +13,7 @@ interface PostCreationAttrs {
 
 @Table({tableName: 'posts'})
 export class Post extends Model<Post, PostCreationAttrs> {
+
     @Column({type: DataType.INTEGER, unique: true, autoIncrement: true, primaryKey: true})
     id: number;
 
